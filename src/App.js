@@ -17,7 +17,6 @@ function mobileCheck() {
 
   return check;
 }
-console.log("Are we on the mobile browser ? ", mobileCheck());
 
 function App() {
   return (
