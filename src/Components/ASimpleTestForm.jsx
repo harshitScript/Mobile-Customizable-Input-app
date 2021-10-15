@@ -3,11 +3,11 @@ import "styled-components/macro";
 
 const ASimpleTestForm = ({ areWeOnMobile }) => {
   console.log("Are we on the mobile browser ? ", areWeOnMobile);
-  //const scrollTop = () => {
-  //  if (areWeOnMobile) {
-  //    window.scrollTo({ top: 20, behavior: "smooth" });
-  //  }
-  //};
+  const scrollTop = () => {
+    if (areWeOnMobile) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
   return (
     <>
       <form
@@ -29,7 +29,17 @@ const ASimpleTestForm = ({ areWeOnMobile }) => {
           <button>Submit</button>
         </div>
       </form>
-      {areWeOnMobile && <span>Yes you are on mobile browser</span>}
+      {areWeOnMobile && (
+        <span
+          css={`
+            position: absolute;
+            top: 900px;
+          `}
+          onClick={scrollTop}
+        >
+          Yes you are on mobile browser
+        </span>
+      )}
     </>
   );
 };
