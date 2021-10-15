@@ -6,7 +6,7 @@ const ASimpleTestForm = ({ areWeOnMobile }) => {
   const scrollTop = () => {
     console.log("i executed");
     if (areWeOnMobile) {
-      window.scrollTo({ top: 100, behavior: "smooth" });
+      window.scrollTo({ top: 50, behavior: "smooth" });
     }
   };
   return (
