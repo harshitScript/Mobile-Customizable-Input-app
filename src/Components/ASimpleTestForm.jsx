@@ -4,7 +4,9 @@ import "styled-components/macro";
 const ASimpleTestForm = ({ areWeOnMobile }) => {
   console.log("Are we on the mobile browser ? ", areWeOnMobile);
   const scrollTop = () => {
-    areWeOnMobile && window.scrollTo({ top: 20, behavior: "smooth" });
+    if (areWeOnMobile) {
+      window.scrollTo({ top: 20, behavior: "smooth" });
+    }
   };
   return (
     <>
