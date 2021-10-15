@@ -20,10 +20,10 @@ const ASimpleTestForm = ({ areWeOnMobile }) => {
         }}
       >
         <div className={styles.fromGroup}>
-          <input onFocus={scrollTop} placeholder="Test Input" />
+          <input  placeholder="Test Input" />
         </div>
         <div className={styles.fromGroup}>
-          <input onFocus={scrollTop} placeholder="Test Input" />
+          <input  placeholder="Test Input" />
         </div>
         <div className={styles.fromGroup}>
           <button>Submit</button>
