@@ -4,8 +4,9 @@ import "styled-components/macro";
 const ASimpleTestForm = ({ areWeOnMobile }) => {
   console.log("Are we on the mobile browser ? ", areWeOnMobile);
   const scrollTop = () => {
+    console.log("i executed");
     if (areWeOnMobile) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 200, behavior: "smooth" });
     }
   };
   return (
@@ -29,11 +30,11 @@ const ASimpleTestForm = ({ areWeOnMobile }) => {
           <button>Submit</button>
         </div>
       </form>
-      {areWeOnMobile && (
+      {true && (
         <span
           css={`
             position: absolute;
-            top: 900px;
+            top: 1200px;
           `}
           onClick={scrollTop}
         >
