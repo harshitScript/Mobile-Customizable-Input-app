@@ -64,25 +64,25 @@ const ASimpleTestForm = ({ areWeOnMobile }) => {
         <div className={styles.fromGroup}>
           <input onClick={scrollTop} placeholder="Test Input" />
         </div>
-        <div className={styles.fromGroup}>
-          <input onClick={scrollTop} placeholder="Test Input" />
-        </div>
-        <div className={styles.fromGroup}>
-          <input onClick={scrollTop} placeholder="Test Input" />
-        </div>
-        <div className={styles.fromGroup}>
-          <input onClick={scrollTop} placeholder="Test Input" />
-        </div>
-        <div className={styles.fromGroup}>
-          <input onClick={scrollTop} placeholder="Test Input" />
-        </div>
-        <div className={styles.fromGroup}>
-          <input onClick={scrollTop} placeholder="Test Input" />
-        </div>
-        <div className={styles.fromGroup}>
-          <input onClick={scrollTop} placeholder="Test Input" />
-        </div>
         <div ref={inputRef} className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
           <input onClick={scrollTop} placeholder="Test Input" />
         </div>
 
