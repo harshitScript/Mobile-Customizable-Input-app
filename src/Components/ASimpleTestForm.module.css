@@ -8,7 +8,7 @@
 
 .fromGroup > input {
   width: 50%;
-  height: 20px;
+  height: 50px;
   border: none;
   border-bottom: 1vh dashed black;
 }
@@ -20,7 +20,7 @@
 
   .fromGroup > input {
     width: 70%;
-    height: 20px;
+    height: 50px;
     border: none;
     border-bottom: 1vh dashed black;
   }
