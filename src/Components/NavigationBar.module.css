@@ -15,10 +15,10 @@
 
 @media screen and (max-width: 500px) {
   .navgationDiv {
-    height: 5vh;
+    height: 70px;
     padding: 1vh;
   }
   .heading-span {
-    font-size: 3vh;
+    font-size: 20px;
   }
 }
