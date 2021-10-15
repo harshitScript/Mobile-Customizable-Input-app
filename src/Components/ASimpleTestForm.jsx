@@ -16,10 +16,20 @@ const ASimpleTestForm = ({ areWeOnMobile }) => {
         }}
       >
         <div className={styles.fromGroup}>
-          <input placeholder="Test Input" />
+          <input
+            onFocus={() => {
+              areWeOnMobile && scrollTo(0, 0);
+            }}
+            placeholder="Test Input"
+          />
         </div>
         <div className={styles.fromGroup}>
-          <input placeholder="Test Input" />
+          <input
+            onFocus={() => {
+              areWeOnMobile && scrollTo(0, 0);
+            }}
+            placeholder="Test Input"
+          />
         </div>
         <div className={styles.fromGroup}>
           <button>Submit</button>
