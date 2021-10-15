@@ -1,19 +1,24 @@
 import styles from "./ASimpleTestForm.module.css";
 import "styled-components/macro";
+import { useRef } from "react";
 
 const ASimpleTestForm = ({ areWeOnMobile }) => {
+  const inputRef = useRef();
   console.log("Are we on the mobile browser ? ", areWeOnMobile);
   const scrollTop = () => {
-    console.log("i executed");
     if (areWeOnMobile) {
-      window.scrollTo({ top: 50, behavior: "smooth" });
+      console.log("position from the top", inputRef.current.offsetTop);
+      window.scrollTo({
+        top: inputRef.current.offsetTop - 300,
+        behavior: "smooth",
+      });
     }
   };
   return (
     <>
       <form
         css={`
-          margin-top: 30vh;
+          margin-bottom: 600px;
         `}
         onSubmit={(e) => {
           e.preventDefault();
@@ -27,19 +32,64 @@ const ASimpleTestForm = ({ areWeOnMobile }) => {
           <input onClick={scrollTop} placeholder="Test Input" />
         </div>
         <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+        <div ref={inputRef} className={styles.fromGroup}>
+          <input onClick={scrollTop} placeholder="Test Input" />
+        </div>
+
+        <div className={styles.fromGroup}>
           <button>Submit</button>
         </div>
       </form>
-      {areWeOnMobile && (
-        <span
-          css={`
-            position: absolute;
-            top: 1200px;
-          `}
-        >
-          Yes you are on mobile browser
-        </span>
-      )}
     </>
   );
 };

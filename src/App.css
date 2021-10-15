@@ -8,6 +8,6 @@
   .grid-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70px 1000px;
+    grid-template-rows: 70px 10000000px;
   }
 }
