@@ -16,7 +16,7 @@
 @media screen and (max-width: 500px) {
   .navgationDiv {
     height: 70px;
-    padding: 1vh;
+    padding: 10px;
   }
   .heading-span {
     font-size: 6px;

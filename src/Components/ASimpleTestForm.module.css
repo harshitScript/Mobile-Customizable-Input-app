@@ -8,7 +8,20 @@
 
 .fromGroup > input {
   width: 50%;
-  height: 5vh;
+  height: 20px;
   border: none;
   border-bottom: 1vh dashed black;
+}
+
+@media screen and (max-width: 500px) {
+  .fromGroup {
+    padding: 5px;
+  }
+
+  .fromGroup > input {
+    width: 70%;
+    height: 20px;
+    border: none;
+    border-bottom: 1vh dashed black;
+  }
 }
