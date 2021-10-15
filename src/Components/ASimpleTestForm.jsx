@@ -3,11 +3,11 @@ import "styled-components/macro";
 
 const ASimpleTestForm = ({ areWeOnMobile }) => {
   console.log("Are we on the mobile browser ? ", areWeOnMobile);
-  const scrollTop = () => {
-    if (areWeOnMobile) {
-      window.scrollTo({ top: 20, behavior: "smooth" });
-    }
-  };
+  //const scrollTop = () => {
+  //  if (areWeOnMobile) {
+  //    window.scrollTo({ top: 20, behavior: "smooth" });
+  //  }
+  //};
   return (
     <>
       <form
@@ -20,10 +20,10 @@ const ASimpleTestForm = ({ areWeOnMobile }) => {
         }}
       >
         <div className={styles.fromGroup}>
-          <input  placeholder="Test Input" />
+          <input placeholder="Test Input" />
         </div>
         <div className={styles.fromGroup}>
-          <input  placeholder="Test Input" />
+          <input placeholder="Test Input" />
         </div>
         <div className={styles.fromGroup}>
           <button>Submit</button>
