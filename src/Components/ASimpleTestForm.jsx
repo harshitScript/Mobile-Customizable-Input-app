@@ -6,7 +6,7 @@ const ASimpleTestForm = ({ areWeOnMobile }) => {
   const scrollTop = () => {
     console.log("i executed");
     if (areWeOnMobile) {
-      window.scrollTo({ top: 200, behavior: "smooth" });
+      window.scrollTo({ top: 100, behavior: "smooth" });
     }
   };
   return (
@@ -21,22 +21,21 @@ const ASimpleTestForm = ({ areWeOnMobile }) => {
         }}
       >
         <div className={styles.fromGroup}>
-          <input placeholder="Test Input" />
+          <input onClick={scrollTop} placeholder="Test Input" />
         </div>
         <div className={styles.fromGroup}>
-          <input placeholder="Test Input" />
+          <input onClick={scrollTop} placeholder="Test Input" />
         </div>
         <div className={styles.fromGroup}>
           <button>Submit</button>
         </div>
       </form>
-      {true && (
+      {areWeOnMobile && (
         <span
           css={`
             position: absolute;
             top: 1200px;
           `}
-          onClick={scrollTop}
         >
           Yes you are on mobile browser
         </span>
