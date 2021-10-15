@@ -1,0 +1,14 @@
+.fromGroup {
+  padding: 1vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fromGroup > input {
+  width: 50%;
+  height: 5vh;
+  border: none;
+  border-bottom: 1vh dashed black;
+}
