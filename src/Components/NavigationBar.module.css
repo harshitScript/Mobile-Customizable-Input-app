@@ -1,0 +1,14 @@
+.navgationDiv {
+  height: 10vh;
+  display: flex;
+  box-sizing: border-box;
+  padding: 2vh;
+  background-color: grey;
+  align-items: center;
+}
+
+.heading-span {
+  font-size: 5vh;
+  font-weight: 900;
+  color: white;
+}
